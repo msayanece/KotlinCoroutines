@@ -192,6 +192,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    //<editor-fold desc="Coroutine use case for network call">
     private fun coroutineDummyNetworkRequest() {
         //Start suspend function calling here under CoroutineScope IO-thread
         CoroutineScope(IO).launch{
@@ -224,4 +225,5 @@ class MainActivity : AppCompatActivity() {
         delay(3000)
         return "Result 2"
     }
+    //</editor-fold>
 }
